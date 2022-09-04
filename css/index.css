@@ -1,6 +1,15 @@
+@media screen and (min-width: 1921px) {
+  .main-container {
+    min-width: 192rem;
+    max-width: 192rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .heading-2 {
   font-weight: bold;
-  ;
   font-size: 3.2rem;
 }
 
@@ -66,7 +75,7 @@
 }
 
 .header-text-container {
-  width: 50%;
+  width: 70%;
   margin: 5rem 0 0 0;
 }
 
@@ -223,11 +232,11 @@
   margin-top: -10rem;
 }
 
-.about-us-container--about-text-container > .heading-2 {
+.about-us-container--about-text-container>.heading-2 {
   margin-bottom: 2rem;
 }
 
-.about-us-container--about-text-container > .normal-text {
+.about-us-container--about-text-container>.normal-text {
   line-height: 1.5;
   font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.795);
@@ -240,7 +249,7 @@
   width: 70%;
 }
 
-.faq-container > .heading-2 {
+.faq-container>.heading-2 {
   margin-bottom: 2.5rem;
 }
 
@@ -248,13 +257,16 @@
   list-style-type: none;
   width: 100%;
 }
+
 .faq-list-item {
   width: 100%;
   margin: 1rem 0;
 }
+
 .faq-question-text-container {
   width: 100%;
 }
+
 .question-text {
   width: 100%;
   background-color: #007bee;
@@ -264,19 +276,23 @@
   font-size: 1.8rem;
   cursor: pointer;
 }
+
 .faq-answer-text-container {
   margin: 1rem 0 2rem 0;
 }
+
 .answer-text {
   font-size: 1.4rem;
   line-height: 1.5;
 }
+
 .sixth-section {
   background-color: #007bee;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .talk-with-us {
   width: 70%;
   margin: 10rem 0;
@@ -288,6 +304,7 @@
 .talk-with-us--left-container {
   width: 50%;
 }
+
 .call-with-us-title {
   display: block;
   font-size: 3.2rem;
@@ -327,24 +344,156 @@
   margin-bottom: 2rem;
 }
 
-.call-with-us--right-container--inner-container > .call-to-action-button {
+.call-with-us--right-container--inner-container>.call-to-action-button {
   background-color: #007bee;
   color: #fff;
   border: 0.1rem solid #007bee;
 }
 
-.call-with-us--right-container--inner-container > .call-to-action-button:hover {
+.call-with-us--right-container--inner-container>.call-to-action-button:hover {
   background-color: #fff;
   color: #007bee;
   border: 0.1rem solid #007bee;
 }
 
-@media screen and (min-width: 1921px) {
-  .main-container {
-    min-width: 192rem;
-    max-width: 192rem;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+.third-section {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container--main-container {
+    width: 90%;
+  }
+
+  .header-container {
+    width: 100%;
+  }
+
+  .header-text-container {
+    width: 100%;
+  }
+
+  .main-header-text {
+    font-size: 4.8rem;
+  }
+
+  .about-service-container {
+    flex-direction: column;
+  }
+  .video-about-service {
+    width: 100%;
+  }
+  .about-service-container--about-text-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .service-details-list {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  .service-detail-item {
+    justify-content: center;
+  }
+  .about-us-container {
+    flex-direction: column;
+  }
+  .about-us-container--about-text-container {
+    margin: 0;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .about-us--img {
+    width: 100%;
+  }
+  .talk-with-us {
+    flex-direction: column;
+  }
+  .talk-with-us--left-container {
+    width: 100%;
+  }
+  .call-with-us--right-container {
+    width: 100%;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header-container--main-container {
+    width: 90%;
+  }
+
+  .header-container {
+    width: 100%;
+  }
+
+  .header-text-container {
+    width: 100%;
+  }
+
+  .main-header-text {
+    font-size: 3.2rem;
+  }
+
+  .about-service-container {
+    width: 90%;
+    flex-direction: column;
+  }
+  .video-about-service {
+    width: 100%;
+  }
+  .about-service-container--about-text-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .service-details-list {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  .service-detail-item {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .service-detail-item--text-container {
+    width: 100%;
+  }
+
+  .service-detail-item--icon-container {
+    width: 12.8rem;
+    height: 12.8rem;
+  }
+  .service-detail-item--icon {
+    width: 12.8rem;
+    height: 12.8rem;
+  }
+
+  .about-us-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .about-us-container--about-text-container {
+    margin: 0;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .about-us--img {
+    width: 100%;
+  }
+
+  .faq-container {
+    width: 90%;
+  }
+
+  .talk-with-us {
+    flex-direction: column;
+    width: 90%;
+  }
+  .talk-with-us--left-container {
+    width: 100%;
+  }
+  .call-with-us--right-container {
+    width: 100%;
+    margin-top: 5rem;
   }
 }
