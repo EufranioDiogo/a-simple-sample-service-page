@@ -1,3 +1,3 @@
 ---
-rel: index.html
+permalink: index.html
 ---
