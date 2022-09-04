@@ -1,3 +1,13 @@
+.heading-2 {
+  font-weight: bold;;
+  font-size: 3.2rem;
+}
+
+.normal-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
 .main-container {
   width: 100vw;
   display: flex;
@@ -82,4 +92,39 @@
 .header-text-container > .call-to-action-button:hover {
   background-color: #fff;
   color: #007bee;
+}
+
+.first-section, .second-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 0 0 0;
+}
+
+.about-service-container {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.video-about-service {
+  width: 50%;
+  border-radius: 1rem;
+}
+
+.about-service-container--about-text-container {
+  width: 45%;
+}
+
+.about-service-container--about-text-container > .heading-2 {
+  margin-bottom: 2.5rem;
+}
+
+.about-service-container--about-text-container > .normal-text {
+  color: #333333;
+}
+
+.second-section {
+  background-color: rgba(238, 238, 238, 0.404);
 }
