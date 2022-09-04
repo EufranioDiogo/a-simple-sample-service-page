@@ -1,0 +1,3 @@
+---
+rel: index.html
+---
