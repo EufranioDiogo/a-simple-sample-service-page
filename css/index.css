@@ -33,8 +33,25 @@
   background-color: #007bee;
   min-height: 41.5rem;
   position: relative;
-  padding: 5rem 0;
+  padding: 6rem 0;
   box-sizing: content-box;
+  background-image: url('../assets/images/pexels-christina-morillo-1181438.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.header-container::before {
+  content: '';
+  position: absolute;
+  background: rgb(0, 123, 238);
+  background: linear-gradient(180deg, rgba(0, 123, 238, 0.7903536414565826) 0%, rgba(9, 9, 121, 0.5158438375350141) 100%, rgba(255, 255, 255, 1) 100%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .header-container--main-container {
@@ -51,6 +68,7 @@
   justify-content: space-between;
   height: 4rem;
   align-items: center;
+  z-index: 100;
 }
 
 .logo-img {
@@ -68,7 +86,31 @@
   margin: 0 0.5rem;
   padding: 1rem 2rem;
   cursor: pointer;
+  position: relative;
 }
+
+.menu-item--link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-item--link::after {
+  content: "";
+  width: 0%;
+  height: 0.5rem;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+
+.menu--menu-item:hover .menu-item--link::after {
+  width: 100%;
+}
+
 
 .menu--menu-item:last-child {
   margin-right: 0;
@@ -81,6 +123,7 @@
 
 .main-header-text {
   font-size: 6rem;
+  margin: 5rem 0;;
 }
 
 .call-to-action-button {
@@ -382,37 +425,47 @@
   .about-service-container {
     flex-direction: column;
   }
+
   .video-about-service {
     width: 100%;
   }
+
   .about-service-container--about-text-container {
     width: 100%;
     margin-top: 2rem;
   }
+
   .service-details-list {
     grid-template-columns: repeat(1, 1fr);
 
   }
+
   .service-detail-item {
     justify-content: center;
   }
+
   .about-us-container {
     flex-direction: column;
   }
+
   .about-us-container--about-text-container {
     margin: 0;
     margin-top: 2rem;
     width: 100%;
   }
+
   .about-us--img {
     width: 100%;
   }
+
   .talk-with-us {
     flex-direction: column;
   }
+
   .talk-with-us--left-container {
     width: 100%;
   }
+
   .call-with-us--right-container {
     width: 100%;
     margin-top: 5rem;
@@ -440,17 +493,21 @@
     width: 90%;
     flex-direction: column;
   }
+
   .video-about-service {
     width: 100%;
   }
+
   .about-service-container--about-text-container {
     width: 100%;
     margin-top: 2rem;
   }
+
   .service-details-list {
     grid-template-columns: repeat(1, 1fr);
 
   }
+
   .service-detail-item {
     justify-content: center;
     flex-direction: column;
@@ -464,6 +521,7 @@
     width: 12.8rem;
     height: 12.8rem;
   }
+
   .service-detail-item--icon {
     width: 12.8rem;
     height: 12.8rem;
@@ -479,6 +537,7 @@
     margin-top: 2rem;
     width: 100%;
   }
+
   .about-us--img {
     width: 100%;
   }
@@ -491,9 +550,11 @@
     flex-direction: column;
     width: 90%;
   }
+
   .talk-with-us--left-container {
     width: 100%;
   }
+
   .call-with-us--right-container {
     width: 100%;
     margin-top: 5rem;
